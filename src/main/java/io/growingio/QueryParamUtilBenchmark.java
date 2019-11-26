@@ -10,12 +10,36 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 压测
+ * <p>
+ * {{{
+ * -- 分支3，预热3，单次方法调用20万次，压测20次
+ * Benchmark                                        Mode  Cnt    Score    Error  Units
+ * QueryParamUtilBenchmark.regex_benchmark            ss   60  119.998 ± 31.018  ms/op
+ * QueryParamUtilBenchmark.regex_benchmark_origin     ss   60  116.378 ± 24.942  ms/op
+ * QueryParamUtilBenchmark.string_benchmark           ss   60    7.443 ±  0.245  ms/op
+ * QueryParamUtilBenchmark.string_benchmark_origin    ss   60    7.270 ±  0.355  ms/op
+ * <p>
+ * -- 分支3，预热3，单次方法调用40万次，压测20次
+ * Benchmark                                        Mode  Cnt    Score    Error  Units
+ * QueryParamUtilBenchmark.regex_benchmark            ss   60  192.079 ± 17.174  ms/op
+ * QueryParamUtilBenchmark.regex_benchmark_origin     ss   60  129.601 ± 13.881  ms/op
+ * QueryParamUtilBenchmark.string_benchmark           ss   60   13.433 ±  0.301  ms/op
+ * QueryParamUtilBenchmark.string_benchmark_origin    ss   60   13.325 ±  0.602  ms/op
+ * <p>
+ * -- 分支3，预热3，单次方法调用40万次，压测100次
+ * Benchmark                                        Mode  Cnt    Score   Error  Units
+ * QueryParamUtilBenchmark.regex_benchmark            ss  300  268.998 ± 9.382  ms/op
+ * QueryParamUtilBenchmark.regex_benchmark_origin     ss  300  168.764 ± 6.610  ms/op
+ * QueryParamUtilBenchmark.string_benchmark           ss  300   15.560 ± 0.380  ms/op
+ * QueryParamUtilBenchmark.string_benchmark_origin    ss  300   14.301 ± 0.177  ms/op
+ * <p>
+ * }}}
  *
  * @author liguobin@growingio.com
  * @version 1.0, 2019/11/26
  */
-@OutputTimeUnit(TimeUnit.MICROSECONDS) //微妙
-@BenchmarkMode(Mode.AverageTime) //平均时间
+@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@BenchmarkMode(Mode.SingleShotTime) //单发调用时间压测
 @State(Scope.Thread)
 @Threads(8)
 public class QueryParamUtilBenchmark {
@@ -24,32 +48,42 @@ public class QueryParamUtilBenchmark {
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(QueryParamUtilBenchmark.class.getSimpleName()).output("./Benchmark_avg.log")
-                .forks(1)
-                .warmupIterations(20)//预热
-                .measurementIterations(20)
+                .include(QueryParamUtilBenchmark.class.getSimpleName()).output("./benchmark_f3_w3_m100_400000.log")
+                .forks(3)//根据文档，这个值大点会更精确，但是更慢。
+                .warmupIterations(3)//预热
+                .measurementIterations(100)
                 .build();
 
         new Runner(opt).run();
     }
 
+    //调用一次方法，执行20 0000次压测
+    //调用20次方法，执行一次压测
     @Benchmark
     public void string_benchmark() {
-        QueryParamUtil.macroNotReplaced(query);
+        for (int i = 0; i < 400000; i++) {
+            QueryParamUtil.macroNotReplaced(query);
+        }
     }
 
     @Benchmark
     public void string_benchmark_origin() {
-        OriginQueryParamUtil.macroNotReplaced(query);
+        for (int i = 0; i < 400000; i++) {
+            OriginQueryParamUtil.macroNotReplaced(query);
+        }
     }
 
     @Benchmark
     public void regex_benchmark() {
-        QueryParamUtil.macroNotReplaced_Regex(query);
+        for (int i = 0; i < 400000; i++) {
+            QueryParamUtil.macroNotReplaced_Regex(query);
+        }
     }
 
     @Benchmark
     public void regex_benchmark_origin() {
-        OriginQueryParamUtil.macroNotReplaced_Regex(query);
+        for (int i = 0; i < 400000; i++) {
+            OriginQueryParamUtil.macroNotReplaced_Regex(query);
+        }
     }
 }
