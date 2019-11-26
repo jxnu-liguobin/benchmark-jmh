@@ -1,0 +1,1952 @@
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark
+
+# Run progress: 0.00% complete, ETA 00:08:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 6494.583 ops/ms
+# Warmup Iteration   2: 9354.823 ops/ms
+# Warmup Iteration   3: 13855.621 ops/ms
+# Warmup Iteration   4: 14253.942 ops/ms
+# Warmup Iteration   5: 14195.171 ops/ms
+# Warmup Iteration   6: 14103.395 ops/ms
+# Warmup Iteration   7: 13907.002 ops/ms
+# Warmup Iteration   8: 13951.706 ops/ms
+# Warmup Iteration   9: 13983.710 ops/ms
+# Warmup Iteration  10: 14035.075 ops/ms
+# Warmup Iteration  11: 13724.518 ops/ms
+# Warmup Iteration  12: 13736.934 ops/ms
+# Warmup Iteration  13: 13863.419 ops/ms
+# Warmup Iteration  14: 13773.824 ops/ms
+# Warmup Iteration  15: 13793.310 ops/ms
+# Warmup Iteration  16: 13901.504 ops/ms
+# Warmup Iteration  17: 13971.002 ops/ms
+# Warmup Iteration  18: 13775.555 ops/ms
+# Warmup Iteration  19: 13886.373 ops/ms
+# Warmup Iteration  20: 13766.692 ops/ms
+Iteration   1: 13628.654 ops/ms
+Iteration   2: 13884.637 ops/ms
+Iteration   3: 13617.375 ops/ms
+Iteration   4: 13699.952 ops/ms
+Iteration   5: 13767.796 ops/ms
+Iteration   6: 13304.438 ops/ms
+Iteration   7: 13770.206 ops/ms
+Iteration   8: 13682.418 ops/ms
+Iteration   9: 13861.125 ops/ms
+Iteration  10: 13757.040 ops/ms
+Iteration  11: 13856.008 ops/ms
+Iteration  12: 13869.728 ops/ms
+Iteration  13: 13758.758 ops/ms
+Iteration  14: 13871.896 ops/ms
+Iteration  15: 13870.509 ops/ms
+Iteration  16: 13847.139 ops/ms
+Iteration  17: 13782.423 ops/ms
+Iteration  18: 13744.191 ops/ms
+Iteration  19: 12855.782 ops/ms
+Iteration  20: 13573.749 ops/ms
+
+
+Result "regex_benchmark":
+  13700.191 ±(99.9%) 210.432 ops/ms [Average]
+  (min, avg, max) = (12855.782, 13700.191, 13884.637), stdev = 242.334
+  CI (99.9%): [13489.759, 13910.623] (assumes normal distribution)
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark_origin
+
+# Run progress: 8.33% complete, ETA 00:07:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 11317.782 ops/ms
+# Warmup Iteration   2: 19510.287 ops/ms
+# Warmup Iteration   3: 23463.913 ops/ms
+# Warmup Iteration   4: 24295.696 ops/ms
+# Warmup Iteration   5: 23733.300 ops/ms
+# Warmup Iteration   6: 23259.327 ops/ms
+# Warmup Iteration   7: 22059.752 ops/ms
+# Warmup Iteration   8: 21927.923 ops/ms
+# Warmup Iteration   9: 21908.072 ops/ms
+# Warmup Iteration  10: 22184.009 ops/ms
+# Warmup Iteration  11: 23179.510 ops/ms
+# Warmup Iteration  12: 22935.825 ops/ms
+# Warmup Iteration  13: 22080.352 ops/ms
+# Warmup Iteration  14: 22503.427 ops/ms
+# Warmup Iteration  15: 22283.455 ops/ms
+# Warmup Iteration  16: 22685.837 ops/ms
+# Warmup Iteration  17: 22998.725 ops/ms
+# Warmup Iteration  18: 21486.070 ops/ms
+# Warmup Iteration  19: 21443.196 ops/ms
+# Warmup Iteration  20: 22985.851 ops/ms
+Iteration   1: 22531.557 ops/ms
+Iteration   2: 22851.584 ops/ms
+Iteration   3: 23464.776 ops/ms
+Iteration   4: 22705.577 ops/ms
+Iteration   5: 23939.432 ops/ms
+Iteration   6: 23716.919 ops/ms
+Iteration   7: 22226.125 ops/ms
+Iteration   8: 23927.745 ops/ms
+Iteration   9: 22107.613 ops/ms
+Iteration  10: 23166.859 ops/ms
+Iteration  11: 19747.963 ops/ms
+Iteration  12: 22904.325 ops/ms
+Iteration  13: 20673.282 ops/ms
+Iteration  14: 21480.244 ops/ms
+Iteration  15: 21865.663 ops/ms
+Iteration  16: 22563.163 ops/ms
+Iteration  17: 22696.736 ops/ms
+Iteration  18: 22567.499 ops/ms
+Iteration  19: 22852.792 ops/ms
+Iteration  20: 22918.619 ops/ms
+
+
+Result "regex_benchmark_origin":
+  22545.424 ±(99.9%) 895.019 ops/ms [Average]
+  (min, avg, max) = (19747.963, 22545.424, 23939.432), stdev = 1030.705
+  CI (99.9%): [21650.405, 23440.443] (assumes normal distribution)
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark
+
+# Run progress: 16.66% complete, ETA 00:06:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 89472.106 ops/ms
+# Warmup Iteration   2: 108902.497 ops/ms
+# Warmup Iteration   3: 115364.731 ops/ms
+# Warmup Iteration   4: 115963.755 ops/ms
+# Warmup Iteration   5: 111254.639 ops/ms
+# Warmup Iteration   6: 111251.914 ops/ms
+# Warmup Iteration   7: 109716.403 ops/ms
+# Warmup Iteration   8: 111612.681 ops/ms
+# Warmup Iteration   9: 111169.034 ops/ms
+# Warmup Iteration  10: 114840.077 ops/ms
+# Warmup Iteration  11: 117488.373 ops/ms
+# Warmup Iteration  12: 118989.253 ops/ms
+# Warmup Iteration  13: 117307.304 ops/ms
+# Warmup Iteration  14: 115990.951 ops/ms
+# Warmup Iteration  15: 119189.887 ops/ms
+# Warmup Iteration  16: 115447.758 ops/ms
+# Warmup Iteration  17: 114432.802 ops/ms
+# Warmup Iteration  18: 107492.050 ops/ms
+# Warmup Iteration  19: 114136.766 ops/ms
+# Warmup Iteration  20: 110349.523 ops/ms
+Iteration   1: 110243.802 ops/ms
+Iteration   2: 109005.160 ops/ms
+Iteration   3: 107938.466 ops/ms
+Iteration   4: 105397.394 ops/ms
+Iteration   5: 103349.473 ops/ms
+Iteration   6: 109056.982 ops/ms
+Iteration   7: 114166.030 ops/ms
+Iteration   8: 110806.579 ops/ms
+Iteration   9: 112725.205 ops/ms
+Iteration  10: 108310.612 ops/ms
+Iteration  11: 111146.877 ops/ms
+Iteration  12: 110113.100 ops/ms
+Iteration  13: 109261.205 ops/ms
+Iteration  14: 109367.367 ops/ms
+Iteration  15: 108303.316 ops/ms
+Iteration  16: 114686.120 ops/ms
+Iteration  17: 114990.529 ops/ms
+Iteration  18: 113245.921 ops/ms
+Iteration  19: 113466.376 ops/ms
+Iteration  20: 113300.403 ops/ms
+
+
+Result "string_benchmark":
+  110444.046 ±(99.9%) 2683.175 ops/ms [Average]
+  (min, avg, max) = (103349.473, 110444.046, 114990.529), stdev = 3089.949
+  CI (99.9%): [107760.871, 113127.221] (assumes normal distribution)
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark_origin
+
+# Run progress: 24.99% complete, ETA 00:06:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 147059.420 ops/ms
+# Warmup Iteration   2: 178985.735 ops/ms
+# Warmup Iteration   3: 167067.834 ops/ms
+# Warmup Iteration   4: 177307.938 ops/ms
+# Warmup Iteration   5: 168354.787 ops/ms
+# Warmup Iteration   6: 170830.919 ops/ms
+# Warmup Iteration   7: 159096.130 ops/ms
+# Warmup Iteration   8: 164009.508 ops/ms
+# Warmup Iteration   9: 166118.134 ops/ms
+# Warmup Iteration  10: 160961.798 ops/ms
+# Warmup Iteration  11: 165124.890 ops/ms
+# Warmup Iteration  12: 164137.241 ops/ms
+# Warmup Iteration  13: 164260.537 ops/ms
+# Warmup Iteration  14: 163425.720 ops/ms
+# Warmup Iteration  15: 160872.266 ops/ms
+# Warmup Iteration  16: 164205.389 ops/ms
+# Warmup Iteration  17: 163901.851 ops/ms
+# Warmup Iteration  18: 160720.220 ops/ms
+# Warmup Iteration  19: 163221.634 ops/ms
+# Warmup Iteration  20: 160684.833 ops/ms
+Iteration   1: 163816.623 ops/ms
+Iteration   2: 169877.132 ops/ms
+Iteration   3: 167990.087 ops/ms
+Iteration   4: 170395.946 ops/ms
+Iteration   5: 163933.121 ops/ms
+Iteration   6: 157240.847 ops/ms
+Iteration   7: 159720.205 ops/ms
+Iteration   8: 163932.041 ops/ms
+Iteration   9: 164631.355 ops/ms
+Iteration  10: 163963.998 ops/ms
+Iteration  11: 160288.700 ops/ms
+Iteration  12: 164376.632 ops/ms
+Iteration  13: 167514.386 ops/ms
+Iteration  14: 170979.383 ops/ms
+Iteration  15: 170541.537 ops/ms
+Iteration  16: 166888.420 ops/ms
+Iteration  17: 164793.807 ops/ms
+Iteration  18: 168490.514 ops/ms
+Iteration  19: 164568.566 ops/ms
+Iteration  20: 164246.569 ops/ms
+
+
+Result "string_benchmark_origin":
+  165409.493 ±(99.9%) 3233.009 ops/ms [Average]
+  (min, avg, max) = (157240.847, 165409.493, 170979.383), stdev = 3723.139
+  CI (99.9%): [162176.484, 168642.503] (assumes normal distribution)
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark
+
+# Run progress: 33.32% complete, ETA 00:05:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   2: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  11: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   2: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  11: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+
+
+Result "regex_benchmark":
+  0.001 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark_origin
+
+# Run progress: 41.65% complete, ETA 00:04:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   2: ≈ 10⁻³ ms/op
+# Warmup Iteration   3: ≈ 10⁻³ ms/op
+# Warmup Iteration   4: ≈ 10⁻³ ms/op
+# Warmup Iteration   5: ≈ 10⁻³ ms/op
+# Warmup Iteration   6: ≈ 10⁻³ ms/op
+# Warmup Iteration   7: ≈ 10⁻³ ms/op
+# Warmup Iteration   8: ≈ 10⁻³ ms/op
+# Warmup Iteration   9: ≈ 10⁻³ ms/op
+# Warmup Iteration  10: ≈ 10⁻³ ms/op
+# Warmup Iteration  11: ≈ 10⁻³ ms/op
+# Warmup Iteration  12: ≈ 10⁻³ ms/op
+# Warmup Iteration  13: ≈ 10⁻³ ms/op
+# Warmup Iteration  14: ≈ 10⁻³ ms/op
+# Warmup Iteration  15: ≈ 10⁻³ ms/op
+# Warmup Iteration  16: ≈ 10⁻³ ms/op
+# Warmup Iteration  17: ≈ 10⁻³ ms/op
+# Warmup Iteration  18: ≈ 10⁻³ ms/op
+# Warmup Iteration  19: ≈ 10⁻³ ms/op
+# Warmup Iteration  20: ≈ 10⁻³ ms/op
+Iteration   1: ≈ 10⁻³ ms/op
+Iteration   2: ≈ 10⁻³ ms/op
+Iteration   3: ≈ 10⁻³ ms/op
+Iteration   4: ≈ 10⁻³ ms/op
+Iteration   5: ≈ 10⁻³ ms/op
+Iteration   6: ≈ 10⁻³ ms/op
+Iteration   7: ≈ 10⁻³ ms/op
+Iteration   8: ≈ 10⁻³ ms/op
+Iteration   9: ≈ 10⁻³ ms/op
+Iteration  10: ≈ 10⁻³ ms/op
+Iteration  11: ≈ 10⁻³ ms/op
+Iteration  12: ≈ 10⁻³ ms/op
+Iteration  13: ≈ 10⁻³ ms/op
+Iteration  14: ≈ 10⁻³ ms/op
+Iteration  15: ≈ 10⁻³ ms/op
+Iteration  16: ≈ 10⁻³ ms/op
+Iteration  17: ≈ 10⁻³ ms/op
+Iteration  18: ≈ 10⁻³ ms/op
+Iteration  19: ≈ 10⁻³ ms/op
+Iteration  20: ≈ 10⁻³ ms/op
+
+
+Result "regex_benchmark_origin":
+  ≈ 10⁻³ ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark
+
+# Run progress: 49.98% complete, ETA 00:04:08
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   6: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   7: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   8: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   9: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  10: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  11: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  12: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  13: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  14: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  15: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  16: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  17: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  18: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  19: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  20: ≈ 10⁻⁴ ms/op
+Iteration   1: ≈ 10⁻⁴ ms/op
+Iteration   2: ≈ 10⁻⁴ ms/op
+Iteration   3: ≈ 10⁻⁴ ms/op
+Iteration   4: ≈ 10⁻⁴ ms/op
+Iteration   5: ≈ 10⁻⁴ ms/op
+Iteration   6: ≈ 10⁻⁴ ms/op
+Iteration   7: ≈ 10⁻⁴ ms/op
+Iteration   8: ≈ 10⁻⁴ ms/op
+Iteration   9: ≈ 10⁻⁴ ms/op
+Iteration  10: ≈ 10⁻⁴ ms/op
+Iteration  11: ≈ 10⁻⁴ ms/op
+Iteration  12: ≈ 10⁻⁴ ms/op
+Iteration  13: ≈ 10⁻⁴ ms/op
+Iteration  14: ≈ 10⁻⁴ ms/op
+Iteration  15: ≈ 10⁻⁴ ms/op
+Iteration  16: ≈ 10⁻⁴ ms/op
+Iteration  17: ≈ 10⁻⁴ ms/op
+Iteration  18: ≈ 10⁻⁴ ms/op
+Iteration  19: ≈ 10⁻⁴ ms/op
+Iteration  20: ≈ 10⁻⁴ ms/op
+
+
+Result "string_benchmark":
+  ≈ 10⁻⁴ ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark_origin
+
+# Run progress: 58.31% complete, ETA 00:03:26
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   2: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   3: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   4: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   5: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   6: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   7: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   8: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   9: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  10: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  11: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  12: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  13: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  14: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  15: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  16: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  17: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  18: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  19: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  20: ≈ 10⁻⁴ ms/op
+Iteration   1: ≈ 10⁻⁴ ms/op
+Iteration   2: ≈ 10⁻⁴ ms/op
+Iteration   3: ≈ 10⁻⁴ ms/op
+Iteration   4: ≈ 10⁻⁴ ms/op
+Iteration   5: ≈ 10⁻⁴ ms/op
+Iteration   6: ≈ 10⁻⁴ ms/op
+Iteration   7: ≈ 10⁻⁴ ms/op
+Iteration   8: ≈ 10⁻⁴ ms/op
+Iteration   9: ≈ 10⁻⁴ ms/op
+Iteration  10: ≈ 10⁻⁴ ms/op
+Iteration  11: ≈ 10⁻⁴ ms/op
+Iteration  12: ≈ 10⁻⁴ ms/op
+Iteration  13: ≈ 10⁻⁴ ms/op
+Iteration  14: ≈ 10⁻⁴ ms/op
+Iteration  15: ≈ 10⁻⁴ ms/op
+Iteration  16: ≈ 10⁻⁴ ms/op
+Iteration  17: ≈ 10⁻⁴ ms/op
+Iteration  18: ≈ 10⁻⁴ ms/op
+Iteration  19: ≈ 10⁻⁴ ms/op
+Iteration  20: ≈ 10⁻⁴ ms/op
+
+
+Result "string_benchmark_origin":
+  ≈ 10⁻⁴ ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark
+
+# Run progress: 66.64% complete, ETA 00:02:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.006 ±(99.9%) 0.007 ms/op
+# Warmup Iteration   2: 0.002 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  11: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.002 ms/op
+                 regex_benchmark·p0.999:  0.014 ms/op
+                 regex_benchmark·p0.9999: 0.855 ms/op
+                 regex_benchmark·p1.00:   6.889 ms/op
+
+Iteration   2: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.010 ms/op
+                 regex_benchmark·p0.9999: 0.736 ms/op
+                 regex_benchmark·p1.00:   8.143 ms/op
+
+Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.016 ms/op
+                 regex_benchmark·p0.9999: 1.466 ms/op
+                 regex_benchmark·p1.00:   6.693 ms/op
+
+Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.016 ms/op
+                 regex_benchmark·p0.9999: 1.414 ms/op
+                 regex_benchmark·p1.00:   6.808 ms/op
+
+Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.017 ms/op
+                 regex_benchmark·p0.9999: 1.631 ms/op
+                 regex_benchmark·p1.00:   16.269 ms/op
+
+Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.020 ms/op
+                 regex_benchmark·p0.9999: 0.554 ms/op
+                 regex_benchmark·p1.00:   8.569 ms/op
+
+Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.018 ms/op
+                 regex_benchmark·p0.9999: 1.101 ms/op
+                 regex_benchmark·p1.00:   8.421 ms/op
+
+Iteration   8: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.002 ms/op
+                 regex_benchmark·p0.999:  0.129 ms/op
+                 regex_benchmark·p0.9999: 2.693 ms/op
+                 regex_benchmark·p1.00:   9.798 ms/op
+
+Iteration   9: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.002 ms/op
+                 regex_benchmark·p0.999:  0.180 ms/op
+                 regex_benchmark·p0.9999: 4.520 ms/op
+                 regex_benchmark·p1.00:   21.758 ms/op
+
+Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.027 ms/op
+                 regex_benchmark·p0.9999: 1.960 ms/op
+                 regex_benchmark·p1.00:   29.000 ms/op
+
+Iteration  11: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   ≈ 10⁻³ ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.087 ms/op
+                 regex_benchmark·p0.9999: 3.352 ms/op
+                 regex_benchmark·p1.00:   33.948 ms/op
+
+Iteration  12: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.061 ms/op
+                 regex_benchmark·p0.9999: 4.825 ms/op
+                 regex_benchmark·p1.00:   13.795 ms/op
+
+Iteration  13: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.042 ms/op
+                 regex_benchmark·p0.9999: 3.593 ms/op
+                 regex_benchmark·p1.00:   12.075 ms/op
+
+Iteration  14: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.047 ms/op
+                 regex_benchmark·p0.9999: 3.725 ms/op
+                 regex_benchmark·p1.00:   10.617 ms/op
+
+Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.046 ms/op
+                 regex_benchmark·p0.9999: 2.355 ms/op
+                 regex_benchmark·p1.00:   12.255 ms/op
+
+Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.029 ms/op
+                 regex_benchmark·p0.9999: 1.962 ms/op
+                 regex_benchmark·p1.00:   11.289 ms/op
+
+Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.041 ms/op
+                 regex_benchmark·p0.9999: 2.438 ms/op
+                 regex_benchmark·p1.00:   13.124 ms/op
+
+Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.028 ms/op
+                 regex_benchmark·p0.9999: 1.193 ms/op
+                 regex_benchmark·p1.00:   9.617 ms/op
+
+Iteration  19: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.069 ms/op
+                 regex_benchmark·p0.9999: 2.688 ms/op
+                 regex_benchmark·p1.00:   10.306 ms/op
+
+Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark·p0.50:   0.001 ms/op
+                 regex_benchmark·p0.90:   0.001 ms/op
+                 regex_benchmark·p0.95:   0.001 ms/op
+                 regex_benchmark·p0.99:   0.001 ms/op
+                 regex_benchmark·p0.999:  0.015 ms/op
+                 regex_benchmark·p0.9999: 1.336 ms/op
+                 regex_benchmark·p1.00:   6.963 ms/op
+
+
+
+Result "regex_benchmark":
+  N = 4625518
+  mean =      0.001 ±(99.9%) 0.001 ms/op
+
+  Histogram, ms/op:
+    [ 0.000,  2.500) = 4625141 
+    [ 2.500,  5.000) = 234 
+    [ 5.000,  7.500) = 82 
+    [ 7.500, 10.000) = 33 
+    [10.000, 12.500) = 16 
+    [12.500, 15.000) = 5 
+    [15.000, 17.500) = 1 
+    [17.500, 20.000) = 2 
+    [20.000, 22.500) = 1 
+    [22.500, 25.000) = 1 
+    [25.000, 27.500) = 0 
+    [27.500, 30.000) = 1 
+    [30.000, 32.500) = 0 
+    [32.500, 35.000) = 1 
+    [35.000, 37.500) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =     ≈ 10⁻⁶ ms/op
+     p(50.0000) =      0.001 ms/op
+     p(90.0000) =      0.001 ms/op
+     p(95.0000) =      0.001 ms/op
+     p(99.0000) =      0.001 ms/op
+     p(99.9000) =      0.037 ms/op
+     p(99.9900) =      2.069 ms/op
+     p(99.9990) =      8.421 ms/op
+     p(99.9999) =     19.606 ms/op
+    p(100.0000) =     33.948 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark_origin
+
+# Run progress: 74.98% complete, ETA 00:02:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.004 ±(99.9%) 0.006 ms/op
+# Warmup Iteration   2: 0.002 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  11: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.030 ms/op
+                 regex_benchmark_origin·p0.9999: 1.362 ms/op
+                 regex_benchmark_origin·p1.00:   12.829 ms/op
+
+Iteration   2: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.047 ms/op
+                 regex_benchmark_origin·p0.9999: 2.578 ms/op
+                 regex_benchmark_origin·p1.00:   8.782 ms/op
+
+Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.045 ms/op
+                 regex_benchmark_origin·p0.9999: 3.282 ms/op
+                 regex_benchmark_origin·p1.00:   11.321 ms/op
+
+Iteration   4: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.025 ms/op
+                 regex_benchmark_origin·p0.9999: 1.588 ms/op
+                 regex_benchmark_origin·p1.00:   7.471 ms/op
+
+Iteration   5: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.063 ms/op
+                 regex_benchmark_origin·p0.9999: 2.080 ms/op
+                 regex_benchmark_origin·p1.00:   42.009 ms/op
+
+Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.028 ms/op
+                 regex_benchmark_origin·p0.9999: 1.447 ms/op
+                 regex_benchmark_origin·p1.00:   8.782 ms/op
+
+Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.032 ms/op
+                 regex_benchmark_origin·p0.9999: 2.008 ms/op
+                 regex_benchmark_origin·p1.00:   12.157 ms/op
+
+Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.022 ms/op
+                 regex_benchmark_origin·p0.9999: 0.967 ms/op
+                 regex_benchmark_origin·p1.00:   7.692 ms/op
+
+Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.034 ms/op
+                 regex_benchmark_origin·p0.9999: 1.383 ms/op
+                 regex_benchmark_origin·p1.00:   9.765 ms/op
+
+Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.058 ms/op
+                 regex_benchmark_origin·p0.9999: 2.639 ms/op
+                 regex_benchmark_origin·p1.00:   8.307 ms/op
+
+Iteration  11: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.047 ms/op
+                 regex_benchmark_origin·p0.9999: 1.801 ms/op
+                 regex_benchmark_origin·p1.00:   15.286 ms/op
+
+Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.044 ms/op
+                 regex_benchmark_origin·p0.9999: 2.182 ms/op
+                 regex_benchmark_origin·p1.00:   12.141 ms/op
+
+Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.022 ms/op
+                 regex_benchmark_origin·p0.9999: 1.138 ms/op
+                 regex_benchmark_origin·p1.00:   6.169 ms/op
+
+Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.020 ms/op
+                 regex_benchmark_origin·p0.9999: 0.970 ms/op
+                 regex_benchmark_origin·p1.00:   6.930 ms/op
+
+Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.035 ms/op
+                 regex_benchmark_origin·p0.9999: 1.486 ms/op
+                 regex_benchmark_origin·p1.00:   7.234 ms/op
+
+Iteration  16: 0.003 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.133 ms/op
+                 regex_benchmark_origin·p0.9999: 9.269 ms/op
+                 regex_benchmark_origin·p1.00:   31.359 ms/op
+
+Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.026 ms/op
+                 regex_benchmark_origin·p0.9999: 1.488 ms/op
+                 regex_benchmark_origin·p1.00:   13.697 ms/op
+
+Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁴ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.026 ms/op
+                 regex_benchmark_origin·p0.9999: 0.805 ms/op
+                 regex_benchmark_origin·p1.00:   6.996 ms/op
+
+Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.001 ms/op
+                 regex_benchmark_origin·p0.999:  0.028 ms/op
+                 regex_benchmark_origin·p0.9999: 2.201 ms/op
+                 regex_benchmark_origin·p1.00:   15.516 ms/op
+
+Iteration  20: 0.002 ±(99.9%) 0.001 ms/op
+                 regex_benchmark_origin·p0.00:   ≈ 10⁻⁵ ms/op
+                 regex_benchmark_origin·p0.50:   0.001 ms/op
+                 regex_benchmark_origin·p0.90:   0.001 ms/op
+                 regex_benchmark_origin·p0.95:   0.001 ms/op
+                 regex_benchmark_origin·p0.99:   0.007 ms/op
+                 regex_benchmark_origin·p0.999:  0.335 ms/op
+                 regex_benchmark_origin·p0.9999: 3.334 ms/op
+                 regex_benchmark_origin·p1.00:   15.614 ms/op
+
+
+
+Result "regex_benchmark_origin":
+  N = 4586314
+  mean =      0.001 ±(99.9%) 0.001 ms/op
+
+  Histogram, ms/op:
+    [ 0.000,  5.000) = 4586181 
+    [ 5.000, 10.000) = 98 
+    [10.000, 15.000) = 23 
+    [15.000, 20.000) = 5 
+    [20.000, 25.000) = 4 
+    [25.000, 30.000) = 1 
+    [30.000, 35.000) = 1 
+    [35.000, 40.000) = 0 
+    [40.000, 45.000) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     ≈ 10⁻⁶ ms/op
+     p(50.0000) =      0.001 ms/op
+     p(90.0000) =      0.001 ms/op
+     p(95.0000) =      0.001 ms/op
+     p(99.0000) =      0.001 ms/op
+     p(99.9000) =      0.041 ms/op
+     p(99.9900) =      2.020 ms/op
+     p(99.9990) =      8.461 ms/op
+     p(99.9999) =     23.432 ms/op
+    p(100.0000) =     42.009 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark
+
+# Run progress: 83.31% complete, ETA 00:01:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.003 ±(99.9%) 0.006 ms/op
+# Warmup Iteration   2: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   3: ≈ 10⁻³ ms/op
+# Warmup Iteration   4: ≈ 10⁻³ ms/op
+# Warmup Iteration   5: ≈ 10⁻³ ms/op
+# Warmup Iteration   6: ≈ 10⁻³ ms/op
+# Warmup Iteration   7: ≈ 10⁻³ ms/op
+# Warmup Iteration   8: ≈ 10⁻³ ms/op
+# Warmup Iteration   9: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  10: ≈ 10⁻³ ms/op
+# Warmup Iteration  11: ≈ 10⁻³ ms/op
+# Warmup Iteration  12: ≈ 10⁻³ ms/op
+# Warmup Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  14: ≈ 10⁻³ ms/op
+# Warmup Iteration  15: ≈ 10⁻³ ms/op
+# Warmup Iteration  16: ≈ 10⁻³ ms/op
+# Warmup Iteration  17: ≈ 10⁻³ ms/op
+# Warmup Iteration  18: ≈ 10⁻³ ms/op
+# Warmup Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  20: ≈ 10⁻³ ms/op
+Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.019 ms/op
+                 string_benchmark·p0.9999: 0.870 ms/op
+                 string_benchmark·p1.00:   5.120 ms/op
+
+Iteration   2: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.021 ms/op
+                 string_benchmark·p0.9999: 0.451 ms/op
+                 string_benchmark·p1.00:   3.604 ms/op
+
+Iteration   3: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.240 ms/op
+                 string_benchmark·p1.00:   7.315 ms/op
+
+Iteration   4: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.320 ms/op
+                 string_benchmark·p1.00:   3.994 ms/op
+
+Iteration   5: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.016 ms/op
+                 string_benchmark·p0.9999: 0.269 ms/op
+                 string_benchmark·p1.00:   5.308 ms/op
+
+Iteration   6: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.368 ms/op
+                 string_benchmark·p1.00:   3.953 ms/op
+
+Iteration   7: ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.146 ms/op
+                 string_benchmark·p1.00:   5.079 ms/op
+
+Iteration   8: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.013 ms/op
+                 string_benchmark·p0.9999: 0.650 ms/op
+                 string_benchmark·p1.00:   5.407 ms/op
+
+Iteration   9: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.323 ms/op
+                 string_benchmark·p1.00:   8.208 ms/op
+
+Iteration  10: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.189 ms/op
+                 string_benchmark·p1.00:   4.084 ms/op
+
+Iteration  11: ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.006 ms/op
+                 string_benchmark·p0.9999: 0.271 ms/op
+                 string_benchmark·p1.00:   4.227 ms/op
+
+Iteration  12: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.596 ms/op
+                 string_benchmark·p1.00:   9.175 ms/op
+
+Iteration  13: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.999:  0.015 ms/op
+                 string_benchmark·p0.9999: 0.383 ms/op
+                 string_benchmark·p1.00:   15.270 ms/op
+
+Iteration  14: ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.005 ms/op
+                 string_benchmark·p0.9999: 0.126 ms/op
+                 string_benchmark·p1.00:   1.524 ms/op
+
+Iteration  15: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.013 ms/op
+                 string_benchmark·p0.9999: 0.260 ms/op
+                 string_benchmark·p1.00:   6.160 ms/op
+
+Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.495 ms/op
+                 string_benchmark·p1.00:   8.364 ms/op
+
+Iteration  17: ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.002 ms/op
+                 string_benchmark·p0.9999: 0.155 ms/op
+                 string_benchmark·p1.00:   2.908 ms/op
+
+Iteration  18: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.022 ms/op
+                 string_benchmark·p0.9999: 0.473 ms/op
+                 string_benchmark·p1.00:   6.586 ms/op
+
+Iteration  19: ≈ 10⁻³ ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   0.001 ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 0.494 ms/op
+                 string_benchmark·p1.00:   4.194 ms/op
+
+Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark·p0.999:  0.009 ms/op
+                 string_benchmark·p0.9999: 1.149 ms/op
+                 string_benchmark·p1.00:   8.217 ms/op
+
+
+
+Result "string_benchmark":
+  N = 4536821
+  mean =     ≈ 10⁻³ ±(99.9%) 0.001 ms/op
+
+  Histogram, ms/op:
+    [ 0.000,  1.250) = 4536634 
+    [ 1.250,  2.500) = 83 
+    [ 2.500,  3.750) = 46 
+    [ 3.750,  5.000) = 27 
+    [ 5.000,  6.250) = 16 
+    [ 6.250,  7.500) = 7 
+    [ 7.500,  8.750) = 5 
+    [ 8.750, 10.000) = 1 
+    [10.000, 11.250) = 1 
+    [11.250, 12.500) = 0 
+    [12.500, 13.750) = 0 
+    [13.750, 15.000) = 0 
+    [15.000, 16.250) = 1 
+    [16.250, 17.500) = 0 
+    [17.500, 18.750) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =     ≈ 10⁻⁶ ms/op
+     p(50.0000) =     ≈ 10⁻⁴ ms/op
+     p(90.0000) =     ≈ 10⁻⁴ ms/op
+     p(95.0000) =     ≈ 10⁻⁴ ms/op
+     p(99.0000) =     ≈ 10⁻³ ms/op
+     p(99.9000) =      0.009 ms/op
+     p(99.9900) =      0.325 ms/op
+     p(99.9990) =      4.067 ms/op
+     p(99.9999) =      8.285 ms/op
+    p(100.0000) =     15.270 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark_origin
+
+# Run progress: 91.64% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.003 ±(99.9%) 0.007 ms/op
+# Warmup Iteration   2: ≈ 10⁻³ ms/op
+# Warmup Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   4: ≈ 10⁻³ ms/op
+# Warmup Iteration   5: ≈ 10⁻³ ms/op
+# Warmup Iteration   6: ≈ 10⁻³ ms/op
+# Warmup Iteration   7: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   8: ≈ 10⁻⁴ ms/op
+# Warmup Iteration   9: ≈ 10⁻³ ms/op
+# Warmup Iteration  10: ≈ 10⁻⁴ ms/op
+# Warmup Iteration  11: ≈ 10⁻³ ms/op
+# Warmup Iteration  12: ≈ 10⁻³ ms/op
+# Warmup Iteration  13: ≈ 10⁻³ ms/op
+# Warmup Iteration  14: ≈ 10⁻³ ms/op
+# Warmup Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  16: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  17: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  19: 0.001 ±(99.9%) 0.001 ms/op
+# Warmup Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.016 ms/op
+                 string_benchmark_origin·p0.9999: 0.681 ms/op
+                 string_benchmark_origin·p1.00:   11.239 ms/op
+
+Iteration   2: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.026 ms/op
+                 string_benchmark_origin·p0.9999: 0.844 ms/op
+                 string_benchmark_origin·p1.00:   11.387 ms/op
+
+Iteration   3: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.017 ms/op
+                 string_benchmark_origin·p0.9999: 0.755 ms/op
+                 string_benchmark_origin·p1.00:   5.071 ms/op
+
+Iteration   4: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.009 ms/op
+                 string_benchmark_origin·p0.9999: 0.249 ms/op
+                 string_benchmark_origin·p1.00:   3.990 ms/op
+
+Iteration   5: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.023 ms/op
+                 string_benchmark_origin·p0.9999: 0.985 ms/op
+                 string_benchmark_origin·p1.00:   10.174 ms/op
+
+Iteration   6: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.038 ms/op
+                 string_benchmark_origin·p0.9999: 0.735 ms/op
+                 string_benchmark_origin·p1.00:   3.854 ms/op
+
+Iteration   7: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.010 ms/op
+                 string_benchmark_origin·p0.9999: 1.717 ms/op
+                 string_benchmark_origin·p1.00:   18.743 ms/op
+
+Iteration   8: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.016 ms/op
+                 string_benchmark_origin·p0.9999: 2.750 ms/op
+                 string_benchmark_origin·p1.00:   10.486 ms/op
+
+Iteration   9: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.009 ms/op
+                 string_benchmark_origin·p0.9999: 0.854 ms/op
+                 string_benchmark_origin·p1.00:   19.300 ms/op
+
+Iteration  10: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.009 ms/op
+                 string_benchmark_origin·p0.9999: 0.692 ms/op
+                 string_benchmark_origin·p1.00:   12.370 ms/op
+
+Iteration  11: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.009 ms/op
+                 string_benchmark_origin·p0.9999: 0.635 ms/op
+                 string_benchmark_origin·p1.00:   8.028 ms/op
+
+Iteration  12: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.004 ms/op
+                 string_benchmark_origin·p0.9999: 0.904 ms/op
+                 string_benchmark_origin·p1.00:   11.059 ms/op
+
+Iteration  13: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.002 ms/op
+                 string_benchmark_origin·p0.9999: 0.295 ms/op
+                 string_benchmark_origin·p1.00:   10.584 ms/op
+
+Iteration  14: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.020 ms/op
+                 string_benchmark_origin·p0.9999: 1.105 ms/op
+                 string_benchmark_origin·p1.00:   15.319 ms/op
+
+Iteration  15: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.014 ms/op
+                 string_benchmark_origin·p0.9999: 1.820 ms/op
+                 string_benchmark_origin·p1.00:   10.879 ms/op
+
+Iteration  16: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.010 ms/op
+                 string_benchmark_origin·p0.9999: 0.342 ms/op
+                 string_benchmark_origin·p1.00:   4.850 ms/op
+
+Iteration  17: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.010 ms/op
+                 string_benchmark_origin·p0.9999: 0.244 ms/op
+                 string_benchmark_origin·p1.00:   7.406 ms/op
+
+Iteration  18: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.011 ms/op
+                 string_benchmark_origin·p0.9999: 0.559 ms/op
+                 string_benchmark_origin·p1.00:   9.585 ms/op
+
+Iteration  19: ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   0.001 ms/op
+                 string_benchmark_origin·p0.999:  0.010 ms/op
+                 string_benchmark_origin·p0.9999: 0.477 ms/op
+                 string_benchmark_origin·p1.00:   4.293 ms/op
+
+Iteration  20: 0.001 ±(99.9%) 0.001 ms/op
+                 string_benchmark_origin·p0.00:   ≈ 10⁻⁶ ms/op
+                 string_benchmark_origin·p0.50:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.90:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.95:   ≈ 10⁻⁴ ms/op
+                 string_benchmark_origin·p0.99:   ≈ 10⁻³ ms/op
+                 string_benchmark_origin·p0.999:  0.009 ms/op
+                 string_benchmark_origin·p0.9999: 0.818 ms/op
+                 string_benchmark_origin·p1.00:   6.799 ms/op
+
+
+
+Result "string_benchmark_origin":
+  N = 4482948
+  mean =      0.001 ±(99.9%) 0.001 ms/op
+
+  Histogram, ms/op:
+    [ 0.000,  1.250) = 4482617 
+    [ 1.250,  2.500) = 134 
+    [ 2.500,  3.750) = 60 
+    [ 3.750,  5.000) = 63 
+    [ 5.000,  6.250) = 21 
+    [ 6.250,  7.500) = 23 
+    [ 7.500,  8.750) = 7 
+    [ 8.750, 10.000) = 5 
+    [10.000, 11.250) = 8 
+    [11.250, 12.500) = 3 
+    [12.500, 13.750) = 2 
+    [13.750, 15.000) = 2 
+    [15.000, 16.250) = 1 
+    [16.250, 17.500) = 0 
+    [17.500, 18.750) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     ≈ 10⁻⁶ ms/op
+     p(50.0000) =     ≈ 10⁻⁴ ms/op
+     p(90.0000) =     ≈ 10⁻⁴ ms/op
+     p(95.0000) =     ≈ 10⁻⁴ ms/op
+     p(99.0000) =      0.001 ms/op
+     p(99.9000) =      0.010 ms/op
+     p(99.9900) =      0.731 ms/op
+     p(99.9990) =      7.015 ms/op
+     p(99.9999) =     14.643 ms/op
+    p(100.0000) =     19.300 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, single-shot each
+# Measurement: 20 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 8 threads
+# Benchmark mode: Single shot invocation time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark
+
+# Run progress: 99.97% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 438.902 ±(99.9%) 0.268 ms/op
+# Warmup Iteration   2: 0.110 ±(99.9%) 0.073 ms/op
+# Warmup Iteration   3: 0.110 ±(99.9%) 0.061 ms/op
+# Warmup Iteration   4: 0.098 ±(99.9%) 0.056 ms/op
+# Warmup Iteration   5: 0.102 ±(99.9%) 0.047 ms/op
+# Warmup Iteration   6: 0.119 ±(99.9%) 0.103 ms/op
+# Warmup Iteration   7: 0.093 ±(99.9%) 0.039 ms/op
+# Warmup Iteration   8: 0.108 ±(99.9%) 0.050 ms/op
+# Warmup Iteration   9: 0.091 ±(99.9%) 0.037 ms/op
+# Warmup Iteration  10: 0.086 ±(99.9%) 0.012 ms/op
+# Warmup Iteration  11: 0.104 ±(99.9%) 0.053 ms/op
+# Warmup Iteration  12: 0.091 ±(99.9%) 0.042 ms/op
+# Warmup Iteration  13: 0.086 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  14: 0.087 ±(99.9%) 0.034 ms/op
+# Warmup Iteration  15: 0.091 ±(99.9%) 0.034 ms/op
+# Warmup Iteration  16: 0.124 ±(99.9%) 0.034 ms/op
+# Warmup Iteration  17: 0.090 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  18: 0.091 ±(99.9%) 0.060 ms/op
+# Warmup Iteration  19: 0.084 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  20: 0.088 ±(99.9%) 0.035 ms/op
+Iteration   1: 0.078 ±(99.9%) 0.034 ms/op
+Iteration   2: 0.211 ±(99.9%) 0.167 ms/op
+Iteration   3: 0.087 ±(99.9%) 0.034 ms/op
+Iteration   4: 0.086 ±(99.9%) 0.040 ms/op
+Iteration   5: 0.070 ±(99.9%) 0.030 ms/op
+Iteration   6: 0.072 ±(99.9%) 0.031 ms/op
+Iteration   7: 0.099 ±(99.9%) 0.056 ms/op
+Iteration   8: 0.085 ±(99.9%) 0.038 ms/op
+Iteration   9: 0.080 ±(99.9%) 0.026 ms/op
+Iteration  10: 0.071 ±(99.9%) 0.028 ms/op
+Iteration  11: 0.070 ±(99.9%) 0.014 ms/op
+Iteration  12: 0.091 ±(99.9%) 0.024 ms/op
+Iteration  13: 0.090 ±(99.9%) 0.036 ms/op
+Iteration  14: 0.074 ±(99.9%) 0.020 ms/op
+Iteration  15: 0.074 ±(99.9%) 0.047 ms/op
+Iteration  16: 0.077 ±(99.9%) 0.065 ms/op
+Iteration  17: 0.103 ±(99.9%) 0.066 ms/op
+Iteration  18: 0.074 ±(99.9%) 0.035 ms/op
+Iteration  19: 0.085 ±(99.9%) 0.050 ms/op
+Iteration  20: 0.087 ±(99.9%) 0.043 ms/op
+
+
+Result "regex_benchmark":
+  N = 20
+  mean =      0.088 ±(99.9%) 0.026 ms/op
+
+  Histogram, ms/op:
+    [0.000, 0.025) = 0 
+    [0.025, 0.050) = 0 
+    [0.050, 0.075) = 7 
+    [0.075, 0.100) = 11 
+    [0.100, 0.125) = 1 
+    [0.125, 0.150) = 0 
+    [0.150, 0.175) = 0 
+    [0.175, 0.200) = 0 
+    [0.200, 0.225) = 1 
+    [0.225, 0.250) = 0 
+    [0.250, 0.275) = 0 
+    [0.275, 0.300) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.070 ms/op
+     p(50.0000) =      0.082 ms/op
+     p(90.0000) =      0.102 ms/op
+     p(95.0000) =      0.205 ms/op
+     p(99.0000) =      0.211 ms/op
+     p(99.9000) =      0.211 ms/op
+     p(99.9900) =      0.211 ms/op
+     p(99.9990) =      0.211 ms/op
+     p(99.9999) =      0.211 ms/op
+    p(100.0000) =      0.211 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, single-shot each
+# Measurement: 20 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 8 threads
+# Benchmark mode: Single shot invocation time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.regex_benchmark_origin
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 401.436 ±(99.9%) 0.094 ms/op
+# Warmup Iteration   2: 0.030 ±(99.9%) 0.029 ms/op
+# Warmup Iteration   3: 0.033 ±(99.9%) 0.032 ms/op
+# Warmup Iteration   4: 0.023 ±(99.9%) 0.007 ms/op
+# Warmup Iteration   5: 0.024 ±(99.9%) 0.007 ms/op
+# Warmup Iteration   6: 0.056 ±(99.9%) 0.046 ms/op
+# Warmup Iteration   7: 0.026 ±(99.9%) 0.016 ms/op
+# Warmup Iteration   8: 0.027 ±(99.9%) 0.026 ms/op
+# Warmup Iteration   9: 0.030 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  10: 0.018 ±(99.9%) 0.008 ms/op
+# Warmup Iteration  11: 0.027 ±(99.9%) 0.016 ms/op
+# Warmup Iteration  12: 0.022 ±(99.9%) 0.008 ms/op
+# Warmup Iteration  13: 0.020 ±(99.9%) 0.011 ms/op
+# Warmup Iteration  14: 0.027 ±(99.9%) 0.018 ms/op
+# Warmup Iteration  15: 0.019 ±(99.9%) 0.010 ms/op
+# Warmup Iteration  16: 0.031 ±(99.9%) 0.060 ms/op
+# Warmup Iteration  17: 0.019 ±(99.9%) 0.011 ms/op
+# Warmup Iteration  18: 0.020 ±(99.9%) 0.012 ms/op
+# Warmup Iteration  19: 0.027 ±(99.9%) 0.019 ms/op
+# Warmup Iteration  20: 0.023 ±(99.9%) 0.022 ms/op
+Iteration   1: 0.028 ±(99.9%) 0.024 ms/op
+Iteration   2: 0.159 ±(99.9%) 0.126 ms/op
+Iteration   3: 0.020 ±(99.9%) 0.009 ms/op
+Iteration   4: 0.020 ±(99.9%) 0.014 ms/op
+Iteration   5: 0.020 ±(99.9%) 0.010 ms/op
+Iteration   6: 0.028 ±(99.9%) 0.026 ms/op
+Iteration   7: 0.032 ±(99.9%) 0.026 ms/op
+Iteration   8: 0.050 ±(99.9%) 0.080 ms/op
+Iteration   9: 0.023 ±(99.9%) 0.033 ms/op
+Iteration  10: 0.017 ±(99.9%) 0.007 ms/op
+Iteration  11: 0.021 ±(99.9%) 0.017 ms/op
+Iteration  12: 0.019 ±(99.9%) 0.012 ms/op
+Iteration  13: 0.047 ±(99.9%) 0.054 ms/op
+Iteration  14: 0.025 ±(99.9%) 0.027 ms/op
+Iteration  15: 0.027 ±(99.9%) 0.034 ms/op
+Iteration  16: 0.014 ±(99.9%) 0.016 ms/op
+Iteration  17: 0.014 ±(99.9%) 0.016 ms/op
+Iteration  18: 0.019 ±(99.9%) 0.036 ms/op
+Iteration  19: 0.019 ±(99.9%) 0.031 ms/op
+Iteration  20: 0.012 ±(99.9%) 0.015 ms/op
+
+
+Result "regex_benchmark_origin":
+  N = 20
+  mean =      0.031 ±(99.9%) 0.028 ms/op
+
+  Histogram, ms/op:
+    [0.000, 0.013) = 1 
+    [0.013, 0.025) = 12 
+    [0.025, 0.038) = 4 
+    [0.038, 0.050) = 1 
+    [0.050, 0.063) = 1 
+    [0.063, 0.075) = 0 
+    [0.075, 0.088) = 0 
+    [0.088, 0.100) = 0 
+    [0.100, 0.113) = 0 
+    [0.113, 0.125) = 0 
+    [0.125, 0.138) = 0 
+    [0.138, 0.150) = 0 
+    [0.150, 0.163) = 1 
+    [0.163, 0.175) = 0 
+    [0.175, 0.188) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.012 ms/op
+     p(50.0000) =      0.021 ms/op
+     p(90.0000) =      0.050 ms/op
+     p(95.0000) =      0.154 ms/op
+     p(99.0000) =      0.159 ms/op
+     p(99.9000) =      0.159 ms/op
+     p(99.9900) =      0.159 ms/op
+     p(99.9990) =      0.159 ms/op
+     p(99.9999) =      0.159 ms/op
+    p(100.0000) =      0.159 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, single-shot each
+# Measurement: 20 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 8 threads
+# Benchmark mode: Single shot invocation time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 414.048 ±(99.9%) 0.118 ms/op
+# Warmup Iteration   2: 0.014 ±(99.9%) 0.008 ms/op
+# Warmup Iteration   3: 0.019 ±(99.9%) 0.011 ms/op
+# Warmup Iteration   4: 0.024 ±(99.9%) 0.022 ms/op
+# Warmup Iteration   5: 0.023 ±(99.9%) 0.018 ms/op
+# Warmup Iteration   6: 0.013 ±(99.9%) 0.008 ms/op
+# Warmup Iteration   7: 0.016 ±(99.9%) 0.012 ms/op
+# Warmup Iteration   8: 0.014 ±(99.9%) 0.007 ms/op
+# Warmup Iteration   9: 0.015 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  10: 0.012 ±(99.9%) 0.006 ms/op
+# Warmup Iteration  11: 0.011 ±(99.9%) 0.005 ms/op
+# Warmup Iteration  12: 0.013 ±(99.9%) 0.009 ms/op
+# Warmup Iteration  13: 0.022 ±(99.9%) 0.010 ms/op
+# Warmup Iteration  14: 0.011 ±(99.9%) 0.005 ms/op
+# Warmup Iteration  15: 0.012 ±(99.9%) 0.007 ms/op
+# Warmup Iteration  16: 0.022 ±(99.9%) 0.017 ms/op
+# Warmup Iteration  17: 0.042 ±(99.9%) 0.067 ms/op
+# Warmup Iteration  18: 0.018 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  19: 0.015 ±(99.9%) 0.005 ms/op
+# Warmup Iteration  20: 0.017 ±(99.9%) 0.005 ms/op
+Iteration   1: 0.018 ±(99.9%) 0.008 ms/op
+Iteration   2: 0.014 ±(99.9%) 0.007 ms/op
+Iteration   3: 0.017 ±(99.9%) 0.007 ms/op
+Iteration   4: 0.014 ±(99.9%) 0.011 ms/op
+Iteration   5: 0.027 ±(99.9%) 0.023 ms/op
+Iteration   6: 0.014 ±(99.9%) 0.007 ms/op
+Iteration   7: 0.015 ±(99.9%) 0.010 ms/op
+Iteration   8: 0.016 ±(99.9%) 0.012 ms/op
+Iteration   9: 0.012 ±(99.9%) 0.007 ms/op
+Iteration  10: 0.010 ±(99.9%) 0.008 ms/op
+Iteration  11: 0.010 ±(99.9%) 0.005 ms/op
+Iteration  12: 0.014 ±(99.9%) 0.010 ms/op
+Iteration  13: 0.009 ±(99.9%) 0.006 ms/op
+Iteration  14: 0.010 ±(99.9%) 0.009 ms/op
+Iteration  15: 0.015 ±(99.9%) 0.009 ms/op
+Iteration  16: 0.013 ±(99.9%) 0.004 ms/op
+Iteration  17: 0.012 ±(99.9%) 0.005 ms/op
+Iteration  18: 0.013 ±(99.9%) 0.009 ms/op
+Iteration  19: 0.015 ±(99.9%) 0.013 ms/op
+Iteration  20: 0.010 ±(99.9%) 0.007 ms/op
+
+
+Result "string_benchmark":
+  N = 20
+  mean =      0.014 ±(99.9%) 0.003 ms/op
+
+  Histogram, ms/op:
+    [0.000, 0.003) = 0 
+    [0.003, 0.005) = 0 
+    [0.005, 0.008) = 0 
+    [0.008, 0.010) = 4 
+    [0.010, 0.013) = 3 
+    [0.013, 0.015) = 7 
+    [0.015, 0.018) = 4 
+    [0.018, 0.020) = 1 
+    [0.020, 0.023) = 0 
+    [0.023, 0.025) = 0 
+    [0.025, 0.028) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.009 ms/op
+     p(50.0000) =      0.014 ms/op
+     p(90.0000) =      0.018 ms/op
+     p(95.0000) =      0.027 ms/op
+     p(99.0000) =      0.027 ms/op
+     p(99.9000) =      0.027 ms/op
+     p(99.9900) =      0.027 ms/op
+     p(99.9990) =      0.027 ms/op
+     p(99.9999) =      0.027 ms/op
+    p(100.0000) =      0.027 ms/op
+
+
+# JMH 1.14.1 (released 1162 days ago, please consider updating!)
+# VM version: JDK 1.8.0_181, VM 25.181-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55084:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, single-shot each
+# Measurement: 20 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 8 threads
+# Benchmark mode: Single shot invocation time
+# Benchmark: io.growingio.QueryParamUtilBenchmark.string_benchmark_origin
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 385.326 ±(99.9%) 0.123 ms/op
+# Warmup Iteration   2: 0.009 ±(99.9%) 0.010 ms/op
+# Warmup Iteration   3: 0.012 ±(99.9%) 0.012 ms/op
+# Warmup Iteration   4: 0.014 ±(99.9%) 0.031 ms/op
+# Warmup Iteration   5: 0.009 ±(99.9%) 0.011 ms/op
+# Warmup Iteration   6: 0.008 ±(99.9%) 0.010 ms/op
+# Warmup Iteration   7: 0.009 ±(99.9%) 0.018 ms/op
+# Warmup Iteration   8: 0.006 ±(99.9%) 0.003 ms/op
+# Warmup Iteration   9: 0.006 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  10: 0.005 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  11: 0.007 ±(99.9%) 0.006 ms/op
+# Warmup Iteration  12: 0.007 ±(99.9%) 0.010 ms/op
+# Warmup Iteration  13: 0.005 ±(99.9%) 0.003 ms/op
+# Warmup Iteration  14: 0.005 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  15: 0.005 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  16: 0.008 ±(99.9%) 0.009 ms/op
+# Warmup Iteration  17: 0.008 ±(99.9%) 0.010 ms/op
+# Warmup Iteration  18: 0.006 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  19: 0.004 ±(99.9%) 0.002 ms/op
+# Warmup Iteration  20: 0.005 ±(99.9%) 0.004 ms/op
+Iteration   1: 0.006 ±(99.9%) 0.004 ms/op
+Iteration   2: 0.007 ±(99.9%) 0.009 ms/op
+Iteration   3: 0.006 ±(99.9%) 0.006 ms/op
+Iteration   4: 0.007 ±(99.9%) 0.006 ms/op
+Iteration   5: 0.010 ±(99.9%) 0.010 ms/op
+Iteration   6: 0.007 ±(99.9%) 0.003 ms/op
+Iteration   7: 0.007 ±(99.9%) 0.006 ms/op
+Iteration   8: 0.010 ±(99.9%) 0.015 ms/op
+Iteration   9: 0.005 ±(99.9%) 0.006 ms/op
+Iteration  10: 0.005 ±(99.9%) 0.001 ms/op
+Iteration  11: 0.006 ±(99.9%) 0.007 ms/op
+Iteration  12: 0.006 ±(99.9%) 0.004 ms/op
+Iteration  13: 0.004 ±(99.9%) 0.002 ms/op
+Iteration  14: 0.004 ±(99.9%) 0.003 ms/op
+Iteration  15: 0.004 ±(99.9%) 0.002 ms/op
+Iteration  16: 0.005 ±(99.9%) 0.003 ms/op
+Iteration  17: 0.004 ±(99.9%) 0.002 ms/op
+Iteration  18: 0.005 ±(99.9%) 0.002 ms/op
+Iteration  19: 0.004 ±(99.9%) 0.002 ms/op
+Iteration  20: 0.004 ±(99.9%) 0.002 ms/op
+
+
+Result "string_benchmark_origin":
+  N = 20
+  mean =      0.006 ±(99.9%) 0.002 ms/op
+
+  Histogram, ms/op:
+    [0.003, 0.004) = 0 
+    [0.004, 0.004) = 2 
+    [0.004, 0.005) = 4 
+    [0.005, 0.005) = 2 
+    [0.005, 0.006) = 2 
+    [0.006, 0.006) = 1 
+    [0.006, 0.007) = 3 
+    [0.007, 0.007) = 4 
+    [0.007, 0.008) = 0 
+    [0.008, 0.008) = 0 
+    [0.008, 0.009) = 0 
+    [0.009, 0.009) = 0 
+    [0.009, 0.010) = 0 
+    [0.010, 0.010) = 1 
+    [0.010, 0.010) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.004 ms/op
+     p(50.0000) =      0.005 ms/op
+     p(90.0000) =      0.010 ms/op
+     p(95.0000) =      0.010 ms/op
+     p(99.0000) =      0.010 ms/op
+     p(99.9000) =      0.010 ms/op
+     p(99.9900) =      0.010 ms/op
+     p(99.9990) =      0.010 ms/op
+     p(99.9999) =      0.010 ms/op
+    p(100.0000) =      0.010 ms/op
+
+
+# Run complete. Total time: 00:08:25
+
+Benchmark                                                                          Mode      Cnt       Score      Error   Units
+QueryParamUtilBenchmark.regex_benchmark                                           thrpt       20   13700.191 ±  210.432  ops/ms
+QueryParamUtilBenchmark.regex_benchmark_origin                                    thrpt       20   22545.424 ±  895.019  ops/ms
+QueryParamUtilBenchmark.string_benchmark                                          thrpt       20  110444.046 ± 2683.175  ops/ms
+QueryParamUtilBenchmark.string_benchmark_origin                                   thrpt       20  165409.493 ± 3233.009  ops/ms
+QueryParamUtilBenchmark.regex_benchmark                                            avgt       20       0.001 ±    0.001   ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin                                     avgt       20      ≈ 10⁻³              ms/op
+QueryParamUtilBenchmark.string_benchmark                                           avgt       20      ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin                                    avgt       20      ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.regex_benchmark                                          sample  4625518       0.001 ±    0.001   ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.00                    sample               ≈ 10⁻⁶              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.50                    sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.90                    sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.95                    sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.99                    sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.999                   sample                0.037              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p0.9999                  sample                2.069              ms/op
+QueryParamUtilBenchmark.regex_benchmark:regex_benchmark·p1.00                    sample               33.948              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin                                   sample  4586314       0.001 ±    0.001   ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.00      sample               ≈ 10⁻⁶              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.50      sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.90      sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.95      sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.99      sample                0.001              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.999     sample                0.041              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p0.9999    sample                2.020              ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin:regex_benchmark_origin·p1.00      sample               42.009              ms/op
+QueryParamUtilBenchmark.string_benchmark                                         sample  4536821      ≈ 10⁻³              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.00                  sample               ≈ 10⁻⁶              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.50                  sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.90                  sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.95                  sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.99                  sample               ≈ 10⁻³              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.999                 sample                0.009              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p0.9999                sample                0.325              ms/op
+QueryParamUtilBenchmark.string_benchmark:string_benchmark·p1.00                  sample               15.270              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin                                  sample  4482948       0.001 ±    0.001   ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.00    sample               ≈ 10⁻⁶              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.50    sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.90    sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.95    sample               ≈ 10⁻⁴              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.99    sample                0.001              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.999   sample                0.010              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p0.9999  sample                0.731              ms/op
+QueryParamUtilBenchmark.string_benchmark_origin:string_benchmark_origin·p1.00    sample               19.300              ms/op
+QueryParamUtilBenchmark.regex_benchmark                                              ss       20       0.088 ±    0.026   ms/op
+QueryParamUtilBenchmark.regex_benchmark_origin                                       ss       20       0.031 ±    0.028   ms/op
+QueryParamUtilBenchmark.string_benchmark                                             ss       20       0.014 ±    0.003   ms/op
+QueryParamUtilBenchmark.string_benchmark_origin                                      ss       20       0.006 ±    0.002   ms/op
