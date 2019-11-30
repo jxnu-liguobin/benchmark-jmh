@@ -9,7 +9,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 压测
+ * 压测单次调用时间
  * <p>
  * {{{
  * -- 分支3，预热3，单次方法调用20万次，压测20次
@@ -57,8 +57,6 @@ public class QueryParamUtilBenchmark {
         new Runner(opt).run();
     }
 
-    //调用一次方法，执行20 0000次压测
-    //调用20次方法，执行一次压测
     @Benchmark
     public void string_benchmark() {
         for (int i = 0; i < 400000; i++) {

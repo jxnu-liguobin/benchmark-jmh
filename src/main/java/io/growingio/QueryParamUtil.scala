@@ -70,10 +70,13 @@ object QueryParamUtil {
    *                                /   \
    *                     seq.startsWith     seq.endsWith (endsWith为startsWith(suffix, value.length - suffix.value.length);)
    *                           |                |
-   *         if (ta[to++] != pa[po++]) {       同左边
-   *                return false;
-   *          }
-   *          //从头遍历判断，不等就直接退出。当最后一个才知道不等时，执行了一个完整的遍历
+   *         while (--pc >= 0) { // pc = prefix.value.length;
+   *           if (ta[to++] != pa[po++]) {     同左边
+   *              return false;
+   *           }
+   *         }
+   *        //startsWith的速度取决于传入的字符串suffix的长度
+   *        //从头遍历判断，不等就直接退出。当最后一个才知道不等时，执行了一个完整的遍历，此时耗时达到最大值
    *
    * }}}
    */
